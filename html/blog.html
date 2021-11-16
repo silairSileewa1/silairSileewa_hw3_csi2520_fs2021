@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css_stylesheet.css">
+    <script>
+        function TextBox()
+        {
+            var total_text=document.getElementsByClassName("input_text");
+            total_text=total_text.length+1;
+            document.getElementById("field_div").innerHTML=document.getElementById("field_div").innerHTML+
+            "<p id='input_text"+total_text+"_wrapper'><input type='text' class='input_text' id='input_text"+total_text+"' placeholder='Enter Text'><input type='button' value='Post Comment' onclick=postComment_field('input_text"+total_text+"');></p>";
+        }
+        </script>
+<script>
+    const comment_post = document.getElementsByClassName(".button");
+    const DivContainer = document.getElementById("div-container");
+    const commentParagraph = document.getElementsByClassName("commentParagraph");
+    button.addeventlistener("click", Addnew);
+    function postComment_field(){
+        const newDiv = document.createElement("div", "p");
+        document.body.appendChild(newDiv);        
+        newDiv.classList.add("div-shadow");
+        document.getElementsByClassName("input_text").onclick = newComment;
+    }
+function newComment(){
+    DivContainer = getElementsByClassName("input_text").innerHTML = commentParagraph;
+}
+</script>
+</head>
+<body>
+    <h1>Steph curry is the greatest shooter of all time</h1>
+    <nav class="menu_items">
+        <a href="../index.html">Home</a>
+        <a href="my_resume.html">Resume</a>
+        <a href="my_fun_facts.html">Fun Facts about me</a>
+        <a href="html/blog.html">Blog</a>
+    </nav>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/zCePkvsxBCQ?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div>
+        <p>Stephen curry is the greatest shooter of all time. recently he passed ray Allen in career three pointers made, and holds the record for most three pointers in a season with a mind boggling 402 three pointers in one season alone. Stephen curry is on his way to his 3rd MVP which only 8 other players have accomplished in NBA history. he joins elite company in Michael Jordan, LeBron James, wilt Chamberlin, Moses Malone, magic Johnson, Larry bird, Kareem Abdul Jabbar and bill Russell. In this video curry torches the Chicago bulls, the current number 1 seed in the eastern conference for 40 points on a great shooting percentage, adding to his hot streak and solidifying his case for MVP this season.</p>
+    </div>
+    <div id="wrapper">
+        <div id="field_div">
+        <input type="button" value="Comment" onclick="TextBox();">
+        </div>
+        </div>
+
+    <footer>
+        <hr>
+        <a href="mailto:silairsileewa@oakland.edu" i class="fas fa-envelope" title="link to my Email"></i></a>
+        <p>Created by Silair Sileewa &copy;</p>
+    </footer>
+</body>
+</html>

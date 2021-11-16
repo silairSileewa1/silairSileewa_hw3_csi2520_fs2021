@@ -3,7 +3,10 @@
     margin: 5px, 10px;
 }
 body{
+    min-height: 100vh;
     padding: 2px;
+    display: flex;
+    flex-direction: column;
 }
 html{
     background-image: url(../img/bg_image_resume.jpg);
@@ -11,8 +14,11 @@ html{
     background-repeat: no-repeat;
 }
 h1{
+    position: absolute;
+    border-style: solid;
+    border-color: 00ff00;
     position: relative;
-    left: 40%;
+    text-align: center;
     margin: 5px, 10px;
 }
 .pic_of_me{
@@ -21,8 +27,11 @@ h1{
 }
 .menu_items{
     position: absolute;
+    border-style: solid;
+    border-color: 00ff00;
     top: 0%;
-    left: 90%;
+    left: 2%;
+    width: 90%;
 }
 .contact_information{
     text-align: center;
@@ -41,9 +50,7 @@ h1{
     display: inline-block;
 }
 footer{
-    position: relative;
-    width: 100%;
-    bottom: 0%;
+    margin-top: auto;
 }
 .about_me{
     position: relative;
